@@ -1,0 +1,7 @@
+
+<div>Liste mit Puzzeln</div>
+<ul>
+    <li *ngFor="let puzzle of puzzlesList$ | async">
+        <span>Titel: {{puzzle.title}} - Teile: {{puzzle.pieces}}</span>
+    </li>
+</ul>
